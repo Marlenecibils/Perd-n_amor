@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perdón Amor</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #ffe6f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        margin: 0;
+    }
+    .container {
+        background: #fff0f5;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    h1 {
+        color: #ff4d6d;
+    }
+    button {
+        background: #ff4d6d;
+        color: white;
+        border: none;
+        padding: 15px 25px;
+        margin: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    button:hover {
+        background: #ff1a3c;
+    }
+    #respuesta {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #ff1a3c;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Amor, perdóname 😔</h1>
+    <p>Ya nunca más voy a jugar esas cosas...</p>
+    <button onclick="perdono()">Te perdono 💖</button>
+    <button onclick="noPerdono()">No te perdono 😢</button>
+    <div id="respuesta"></div>
+</div>
+
+<script>
+    function perdono() {
+        document.getElementById('respuesta').innerText = "Gracias mi amor 😍. Entonces significa que no vas a tomar y me vas a dejar tocar?";
+    }
+
+    function noPerdono() {
+        document.getElementById('respuesta').innerText = "Dale atu amor, perdón o que querés más que haga?";
+    }
+</script>
+</body>
+</html>
